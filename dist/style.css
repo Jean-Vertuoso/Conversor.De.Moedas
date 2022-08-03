@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, rgb(20, 97, 170), rgb(20, 20, 19));
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    border: outset;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(93, 127, 156);
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#Titulo{
+    display: block;
+    padding: 20px;
+    font-variant: small-caps;
+}
+
+.CaixaDigitacao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+label{
+    font-weight: bold;
+    margin-right: 5px;
+    padding:5px;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+.CaixaDigitacao input,select{
+    font-size: 16px;
+    cursor: pointer;
+    width: 180px;
+}
+
+#idQualMoeda{
+    padding: 10px;
+}
+
+#Radios{
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    height: 150px;
+    position: relative;
+    left: 30px;
+}
+
+#BotaoMostrar{
+    width: 200px;
+    height: 50px;
+    font-size: 19px;
+    margin-top: 50px;
+    border-color:  unset;
+    cursor: pointer;
+    font-weight: bold;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Integração API</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="box">
+
+                <div id="Titulo">
+                    <h1>Cotação</h1>
+                </div>
+
+                <div id="AjusteDaBox">
+
+                    <div class="CaixaDigitacao">
+
+                        <label for="idMoeda">Digite o nome da moeda</label>
+                            <select id="idMoeda" name="nmMoeda">
+                                <option value="AUD" selected>Dólar australiano</option>
+                                <option value="CAD">Dólar canadense</option>
+                                <option value="CHF">Franco suíço</option>
+                                <option value="DKK">Coroa dinamarquesa</option>
+                                <option value="EUR">Euro</option>
+                                <option value="GBP">Libra Esterlina</option>                                
+                                <option value="JPY">Iene</option>
+                                <option value="NOK">Coroa norueguesa</option>
+                                <option value="SEK">Coroa sueca</option>
+                                <option value="USD">Dólar</option>
+                            </select>
+
+                        <label for="idData">Digite a data da cotação</label>
+                        <input
+                            id="idData"
+                            name="nmData"
+                            type="text"
+                            placeholder="mm-dd-aaaa">
+
+                        <label for="idValorInicial">Digite o valor inicial</label>
+                        <input
+                            id="idValorInicial"
+                            name="nmValorInicial"
+                            type="text">
+                        
+                    </div>
+
+                    <div id="idQualMoeda">
+                        <h3>Para qual moeda deseja converter: </h3>
+                    </div>
+
+                    <div id="Radios">
+                        <div id="Real">
+                            <input
+                                id="idRealConv"
+                                name="nmMoedaSaida"
+                                type="radio">
+                            <label for="idRealConv">Real</label>
+                        </div>
+
+                        <div id="DolarAmericano">
+                            <input
+                                id="idDolarAmerConv"
+                                name="nmMoedaSaida"
+                                type="radio">
+                            <label for="idDolarAmerConv">Dólar Americano</label>
+                        </div>
+
+                        <div id="Euro">
+                            <input
+                                id="idEuroConv"
+                                name="nmMoedaSaida"
+                                type="radio">
+                            <label for="idEuroConv">Euro</label>
+                        </div>
+
+                        <div id="Libra">
+                            <input
+                                id="idLibraConv"
+                                name="nmMoedaSaida"
+                                type="radio">
+                            <label for="idLibraConv">Libra Esterlina</label>
+                        </div>
+
+                        <div id="DolarCanadense">
+                            <input
+                                id="idDolarCanConv"
+                                name="nmMoedaSaida"
+                                type="radio">
+                            <label for="idDolarCanConv">Dólar Canadense</label>
+                        </div>                    
+                    </div>
+                
+                    <div class="CaixaDigitacao">
+                        <input
+                            id="idValorFinal"
+                            name="nmValorFinal"
+                            type="text">
+                    </div>
+
+                    <div class="Botoes">
+                        <input
+                            class="Botao"
+                            type="button"
+                            value="Converter">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
